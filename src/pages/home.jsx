@@ -14,8 +14,8 @@ const HomePage = () => {
             Trusted by parents and schools — empowering learners with mentoring, career counseling, and training.
           </p>
           <Button variant="success" size="lg" className="shadow-lg">
-            Explore Our Services
-          </Button>
+            Explore Our Services 
+          </Button><hr />
         </Container>
       </section>
 

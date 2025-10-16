@@ -44,3 +44,16 @@ body::before {
 .active-link {
   color: #4caf50 !important;
 }
+
+.team-card-img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+.card {
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}

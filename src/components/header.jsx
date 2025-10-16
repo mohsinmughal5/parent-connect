@@ -27,7 +27,7 @@ const Header = () => {
       <Container>
         {/* Logo / Brand */}
         <Navbar.Brand as={Link} to="/" className="fw-bold text-light">
-          <img  src="/public/mainlogo.png" alt="mainlogo"  style={{height: "50px", Width: "50px"}}/><span className="text-success">Parent Connect</span>
+          <img  src="/mainlogo.png" alt="mainlogo"  style={{height: "50px", Width: "50px"}}/><span className="text-success">Parent Connect</span>
         </Navbar.Brand>
 
         {/* Mobile Toggle */}

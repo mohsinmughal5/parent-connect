@@ -15,7 +15,7 @@ function Footer() {
         zIndex: 1000,
       }}
     >
-      © 2025 EduConsult | All Rights Reserved
+      © 2025 Parent Connect | All Rights Reserved
     </footer>
   );
 }
