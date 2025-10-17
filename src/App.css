@@ -50,6 +50,7 @@ body::before {
   transition: transform 0.3s ease;
 }
 
+
 .card {
   transition: box-shadow 0.3s ease;
 }
@@ -57,3 +58,40 @@ body::before {
 .card:hover {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
+
+.pagination {
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.pagination .page-link {
+  color: #198754;
+  border: 1px solid #198754;
+  transition: all 0.2s ease-in-out;
+}
+
+.pagination .page-number {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #198754;
+  border-color: #198754;
+  color: white;
+}
+
+.pagination .page-link:hover:not(.disabled) {
+  background-color: #d1e7dd;
+  color: #0f5132;
+}
+
+.page-item.disabled .page-link {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+

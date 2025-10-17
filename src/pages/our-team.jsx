@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import { Card, Button, Modal, Container, Row, Col, ButtonGroup } from "react-bootstrap";
 import TeamData from "../components/team-data";
+import CustomPagination from "../components/pagination";
+
 
 function OurTeam() {
   const [team] = useState([...TeamData]); // spread operator
   const [filteredTeam, setFilteredTeam] = useState([...TeamData]);
   const [selectedMember, setSelectedMember] = useState(null);
   const [show, setShow] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+const itemsPerPage = 6;
+
+
 
   const categories = ["All", "Advisory", "Training", "Mentoring", "Counseling", "Management"];
 
@@ -28,6 +34,10 @@ function OurTeam() {
   };
 
   const handleClose = () => setShow(false);
+  // Calculate which members to show on this page
+const startIndex = (currentPage - 1) * itemsPerPage;
+const currentMembers = filteredTeam.slice(startIndex, startIndex + itemsPerPage);
+
 
   return (
     <Container className="mt-5 pt-5">
@@ -51,7 +61,7 @@ function OurTeam() {
 
       {/* 🧩 Team Cards */}
       <Row>
-        {filteredTeam.map((member) => (
+        {currentMembers.map((member) => (
           <Col md={4} sm={6} key={member.id} className="mb-4">
             <Card className="shadow-sm h-100 border-0">
               <div className="overflow-hidden" style={{ height: "250px" }}>
@@ -64,7 +74,7 @@ function OurTeam() {
                     cursor: "pointer",
                     width: "100%",
                     height: "100%",
-                    objectFit: "cover",
+                    objectFit: "contain",
                     transition: "transform 0.3s ease",
                   }}
                   onClick={() => handleOpen(member.id)}
@@ -83,6 +93,13 @@ function OurTeam() {
           </Col>
         ))}
       </Row>
+        <CustomPagination
+  totalItems={filteredTeam.length}
+  itemsPerPage={itemsPerPage}
+  currentPage={currentPage}
+  onPageChange={setCurrentPage}
+/>
+
 
       {/* 🪟 Modal */}
       <Modal show={show} onHide={handleClose} centered>
@@ -108,7 +125,11 @@ function OurTeam() {
         </Modal.Footer>
       </Modal>
     </Container>
+
+    
   );
+
+
 }
 
 export default OurTeam;
