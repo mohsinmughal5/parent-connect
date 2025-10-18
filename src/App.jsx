@@ -5,6 +5,7 @@ import './App.css'
 import Header from './components/header'
 import Footer from './components/footer'
 import RouterCall from './routes'
+import './components/theme.css'
 function App() {
 
   return (

@@ -3,7 +3,9 @@ import HomePage from './pages/home'
 import OurTeam from './pages/our-team'
 import ServicesPage from './pages/services'
 import ContactUs from './pages/contact-us'
+import Blogs from './pages/blogs'
 import { Route, Routes } from 'react-router-dom'
+
 
 const RouterCall = () => {
   return (
@@ -13,6 +15,7 @@ const RouterCall = () => {
         <Route path='/services' element={<ServicesPage />} />
         <Route path='/our-team' element={<OurTeam />} />
         <Route path='/contact-us' element={<ContactUs />} />
+        <Route path="/blogs" element={<Blogs />} />
       </Routes>
     </div>
   )

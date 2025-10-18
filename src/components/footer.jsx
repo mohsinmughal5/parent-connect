@@ -4,7 +4,7 @@ function Footer() {
   return (
     <footer
       style={{
-        position: "fixed",
+        positioN: "ABSOLUTE",
         bottom: 0,
         left: 0,
         width: "100%",
@@ -13,6 +13,7 @@ function Footer() {
         textAlign: "center",
         padding: "10px 0",
         zIndex: 1000,
+        top: "2vh",
       }}
     >
       © 2025 Parent Connect | All Rights Reserved

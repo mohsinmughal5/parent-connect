@@ -41,7 +41,7 @@ const currentMembers = filteredTeam.slice(startIndex, startIndex + itemsPerPage)
 
   return (
     <Container className="mt-5 pt-5">
-      <h2 className="text-center mb-4 fw-bold text-success">Our Team</h2>
+      <h2 className="text-center mb-4 fw-bold text-light fw-ul">Our Team</h2>
 
       {/* 🔘 Filter Buttons */}
       <div className="text-center mb-4">
@@ -64,7 +64,7 @@ const currentMembers = filteredTeam.slice(startIndex, startIndex + itemsPerPage)
         {currentMembers.map((member) => (
           <Col md={4} sm={6} key={member.id} className="mb-4">
             <Card className="shadow-sm h-100 border-0">
-              <div className="overflow-hidden" style={{ height: "250px" }}>
+              <div className="overflow-hidden" style={{ height: "250px", backgroundColor: "#c8ddf3ff" }}>
                 <Card.Img
                   variant="top"
                   src={member.img}
@@ -74,7 +74,7 @@ const currentMembers = filteredTeam.slice(startIndex, startIndex + itemsPerPage)
                     cursor: "pointer",
                     width: "100%",
                     height: "100%",
-                    objectFit: "contain",
+                    objectFit: "Contain",
                     transition: "transform 0.3s ease",
                   }}
                   onClick={() => handleOpen(member.id)}
@@ -82,7 +82,7 @@ const currentMembers = filteredTeam.slice(startIndex, startIndex + itemsPerPage)
                   onMouseOut={(e) => (e.target.style.transform = "scale(1)")}
                 />
               </div>
-              <Card.Body className="text-center">
+              <Card.Body className="text-center" style={{ backgroundColor: "#e2e2b0ff" }}>
                 <Card.Title>{member.name}</Card.Title>
                 <Card.Text className="text-muted">{member.role}</Card.Text>
                 <Button variant="primary" onClick={() => handleOpen(member.id)}>
