@@ -40,7 +40,7 @@ function Blogs() {
 
   return (
     <Container className="py-5 mt-5">
-      <h2 className="text-center mb-4 fw-bold text-success">Our Blogs</h2>
+      <h2 className="text-center mb-4 fw-bold text-light">Our Blogs</h2>
       <Row>
         {blogs.map((blog) => (
           <Col md={4} sm={6} xs={12} key={blog.id} className="mb-4">

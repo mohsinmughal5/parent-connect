@@ -95,3 +95,10 @@ body::before {
   cursor: not-allowed;
 }
 
+/* Add in App.css */
+.auth-bg {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+              /* url('') center/cover no-repeat; */
+}
+
+

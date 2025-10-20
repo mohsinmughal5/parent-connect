@@ -106,7 +106,7 @@ const ContactUs = () => {
           <Card className="shadow-sm border-0 rounded-4 p-3 mb-4">
             <Card.Body>
               <h5 className="fw-bold mb-3">Get in Touch</h5>
-              <p><strong>Address:</strong><br />123 Education Street, Chakwal, Pakistan</p>
+              <p><strong>Address:</strong><br />Main Rawalpindi Road, Ashraf Town, Chakwal, Pakistan</p>
               <p><strong>Phone:</strong><br />+92 300 1234567</p>
               <p><strong>Email:</strong><br />info@parentconnect.pk</p>
             </Card.Body>
@@ -116,7 +116,7 @@ const ContactUs = () => {
           <div className="ratio ratio-16x9 rounded-4 overflow-hidden">
             <iframe
               title="School Location"
-              src="https://maps.google.com/maps?q=Lahore&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d107141.99690288909!2d72.7762286!3d32.9460613!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39205d09472f227d%3A0xa72d1771f22eccf3!2sForces%20School%20%26%20College%20System%20Chakwal%20Campus%20(FSCS)!5e0!3m2!1sen!2s!4v1760972133310!5m2!1sen!2s"
               style={{ border: 0 }}
               allowFullScreen
             ></iframe>
