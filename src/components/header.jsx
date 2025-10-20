@@ -72,13 +72,13 @@ const Header = () => {
               Contact Us
             </Nav.Link>
 
-            <Nav.Link
+            {/* <Nav.Link
               as={Link}
               to="/sign-up"
               className={`mx-2 ${location.pathname === "/sign-up" ? "active-link" : ""}`}
             >
               Sign-Up
-            </Nav.Link>
+            </Nav.Link> */}
 
             {/* ✅ Prominent Login Button on Far Right */}
             <Button
